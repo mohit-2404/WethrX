@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WethrX</title>
+  <link rel="icon" href="logoshort.png"  type="image/png"> <!-- optional logo -->
+  <link rel="stylesheet" href="weather.css"> 
+</head>
+<body> 
+    <div id="header">
+      <img src="logo.png" height="80px" width="100px">
+      <button onclick="toggleTheme()" id="theme-toggle">🌙 Dark Mode</button> <!-- To create a botton which will change from light mode to dark mode and vice versa
+        its id is theme-toggle and when clicked it will call a function toggleTheme in js -->
+  </div >
+  <h1><center>Weather Result</center></h1>
+  <div id="weatherResult">Loading...</div>
+  <script src="weather.js"></script>
+</body>
+</html>
