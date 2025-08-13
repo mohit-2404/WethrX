@@ -1,15 +1,3 @@
-function toggleTheme() {
-  const body = document.body;
-  const button = document.getElementById("theme-toggle");
-
-  body.classList.toggle("dark");
-
-  if (body.classList.contains("dark")) {
-    button.textContent = "☀️ Light Mode";
-  } else {
-    button.textContent = "🌙 Dark Mode";
-  }
-}
 async function getWeather(city) {
   const apiKey = 'de7db2b5645a788364ce7713a4663a83'; // Replace with your API key
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
